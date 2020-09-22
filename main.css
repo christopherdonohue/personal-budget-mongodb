@@ -14,6 +14,7 @@ div.menu {
     padding: 0 40px;
 }
 
+
 div.menu ul,
 div.menu ul li {
     margin: 0;
@@ -74,6 +75,8 @@ div.hero h2 {
 }
 
 .bottom {
+    position: relative;
+    top: 10px;
     height: 50px;
     background-color: #b4c6f0;
     padding: 40px;
@@ -85,6 +88,7 @@ div.hero h2 {
 
 .container div.text-box {
     display: inline-block;
+    font-size: large;
     width: 100%;
     max-width: 340px;
     text-align: justify;
