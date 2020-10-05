@@ -5,12 +5,7 @@ const port = 3000;
 var fs = require('fs');
 const budget = JSON.parse(fs.readFileSync('newFile.json', 'utf8'));
 
-//app.use(cors());
-app.use('/', express.static('public'));
-
-
-
-
+app.use(cors());
 
 
 app.get('/budget', (req, res) => {
@@ -18,5 +13,5 @@ app.get('/budget', (req, res) => {
 });
 
 app.listen(port, () => {
-console.log(`Example app listening at http://localhost:${port}`) 
+console.log(`API served at http://localhost:${port}`) 
 });
